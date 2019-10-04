@@ -42,3 +42,9 @@ created by net/http.(*Server).Serve
 2019/10/04 18:53:34 [INFO][cache:0xc0001460f0] Started certificate maintenance routine
 2019/10/04 18:53:34 [INFO] Serving http://:2016 
 2019/10/04 18:53:35 [NOTICE] Sending telemetry: we were too early; waiting 23h49m4.988097028s before trying again
+2019/10/04 18:59:29 [INFO] SIGINT: Shutting down
+2019/10/04 18:59:29 [INFO][cache:0xc0001460f0] Stopped certificate maintenance routine
+2019/10/04 18:59:35 [INFO] Caddy version: unknown
+2019/10/04 18:59:35 [INFO][cache:0xc0002100a0] Started certificate maintenance routine
+2019/10/04 18:59:35 [INFO] Serving http://:2016 
+2019/10/04 18:59:36 [NOTICE] Sending telemetry: we were too early; waiting 23h43m3.375807576s before trying again

@@ -38,3 +38,7 @@ created by net/http.(*Server).Serve
 	/usr/local/Cellar/go/1.13/libexec/src/net/http/server.go:2927 +0x38e
 2019/10/04 18:50:31 [INFO] SIGINT: Shutting down
 2019/10/04 18:50:31 [INFO][cache:0xc0001c60a0] Stopped certificate maintenance routine
+2019/10/04 18:53:34 [INFO] Caddy version: unknown
+2019/10/04 18:53:34 [INFO][cache:0xc0001460f0] Started certificate maintenance routine
+2019/10/04 18:53:34 [INFO] Serving http://:2016 
+2019/10/04 18:53:35 [NOTICE] Sending telemetry: we were too early; waiting 23h49m4.988097028s before trying again

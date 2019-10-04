@@ -350,14 +350,14 @@ func (s *Server) ServePacket(pc net.PacketConn) error {
 
 // ServeHTTP is the entry point of all HTTP requests.
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	defer func() {
+	/*	defer func() {
 		// We absolutely need to be sure we stay alive up here,
 		// even though, in theory, the errors middleware does this.
 		if rec := recover(); rec != nil {
 			log.Printf("[PANIC] %v", rec)
 			DefaultErrorFunc(w, r, http.StatusInternalServerError)
 		}
-	}()
+	}()*/
 
 	fmt.Printf("** ServeHTTP start **\n")
 

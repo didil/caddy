@@ -818,10 +818,10 @@ func startServers(serverList []Server, inst *Instance, restartFds map[string]res
 			select {
 			case err := <-errChan:
 				if err != nil {
-					if !strings.Contains(err.Error(), "use of closed network connection") {
-						// this error is normal when closing the listener; see https://github.com/golang/go/issues/4373
-						log.Println(err)
-					}
+					//	if !strings.Contains(err.Error(), "use of closed network connection") {
+					// this error is normal when closing the listener; see https://github.com/golang/go/issues/4373
+					log.Println(err)
+					//	}
 				}
 			case <-stopChan:
 				return

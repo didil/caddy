@@ -359,6 +359,8 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 	}()
 
+	fmt.Printf("** ServeHTTP start **\n")
+
 	// record the User-Agent string (with a cap on its length to mitigate attacks)
 	ua := r.Header.Get("User-Agent")
 	if len(ua) > 512 {
@@ -388,7 +390,11 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Server", caddy.AppName)
 
+	fmt.Printf("** serveHTTP start **\n")
+
 	status, _ := s.serveHTTP(w, r)
+
+	fmt.Printf("** serveHTTP done **\n")
 
 	// Fallback error response in case error handling wasn't chained in
 	if status >= 400 {
